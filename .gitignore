@@ -3,5 +3,6 @@
 !*.c
 !*.output
 !*.md
+!*.sh
 !.gitignore
 !makefile

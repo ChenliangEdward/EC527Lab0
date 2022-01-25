@@ -65,6 +65,8 @@ int main(int argc, char *argv[])
   long long int time_sec, time_ns;
 
   i = j = k = 0;
+  long long int count = 35300000;
+  double sum = 0;
 
   /* get start time */
   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time_start);
@@ -75,7 +77,9 @@ int main(int argc, char *argv[])
    * one second to run. For example, figure out how many times the computer
    * can execute the sin(x) function inside a loop, where x changes each
    * time sin(x) is called, add up the values of sin(x).                   */
-
+   for (; i < count; ++i) {
+      sum += sin(i);
+   }
 
   /* get end time */
   clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time_stop);
@@ -84,14 +88,15 @@ int main(int argc, char *argv[])
   /* ADD CODE HERE to print something you computed in between the two calls
    * to clock_gettime, such as a sum. (to understand why, refer to the
    * test_O_level.c part of the assignment)                                */
-
-
+   printf("Sum: %f\n", sum);
 
   /* compute elapsed time and print. */
+  //printf("Time elapsed (without diff()): %f\n", (time_stop.tv_sec - time_start.tv_sec) + 1.0e-9 * (time_stop.tv_nsec - time_start.tv_sec));
 
   /* MODIFY: Add a call to the "diff()" function (which is defined above) as
    *         instructed in the lab0 instructions.                          */
-  time_sec = 0; time_ns  = 0; /* MODIFY: After you've called diff(), set these from the returned struct */
+  struct timespec t = diff(time_start, time_stop);
+  time_sec = t.tv_sec; time_ns  = t.tv_nsec; /* MODIFY: After you've called diff(), set these from the returned struct */
 
 
   printf("that took %ld sec and %ld nsec (%ld.%09ld sec)\n", time_sec, time_ns, time_sec, time_ns);
