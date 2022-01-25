@@ -4,5 +4,6 @@
 !*.output
 !*.md
 !*.sh
+!*.csv
 !.gitignore
 !makefile
