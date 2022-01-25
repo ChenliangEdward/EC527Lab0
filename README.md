@@ -1,7 +1,7 @@
-# EC527 Lab1
-Chenliang Wang
-Yuxuan Luo
-edwangd@bu.edu
+# EC527 Lab0
+Chenliang Wang\
+edwangd@bu.edu\
+Yuxuan Luo\
 luoyx@bu.edu
 
 # Part 1
