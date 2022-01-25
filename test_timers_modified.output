@@ -1,0 +1,39 @@
+Using gettimeofday: 
+ Time = 1.096500000 sec
+ Time = 0.109262000 sec
+ Time = 0.010924000 sec
+ Time = 0.001092000 sec
+ Time = 0.000109000 sec
+ Time = 0.000011000 sec
+ Time = 0.000001000 sec
+ Time = 0.000000000 sec
+ Time = 0.000000000 sec
+ Time = 0.000000000 sec
+gettimeofday tests done, 1111111111 steps total
+
+Using RDTSC: 
+Time = 1.093607765 sec (3280823407 cycles)
+Time = 0.110000491 sec (330001464 cycles)
+Time = 0.010939089 sec (32817268 cycles)
+Time = 0.001091716 sec (3275147 cycles)
+Time = 0.000109143 sec (327429 cycles)
+Time = 0.000010949 sec (32846 cycles)
+Time = 0.000001121 sec (3363 cycles)
+Time = 0.000000118 sec (355 cycles)
+Time = 0.000000020 sec (61 cycles)
+Time = 0.000000008 sec (24 cycles)
+RDTSC tests done, 2222222222 steps total
+
+Using times(): 
+ 1000000000 steps,   1.07000000 sec
+  100000000 steps,   0.11000000 sec
+   10000000 steps,   0.01000000 sec
+    1000000 steps,   0.00000000 sec
+     100000 steps,   0.00000000 sec
+      10000 steps,   0.00000000 sec
+       1000 steps,   0.00000000 sec
+        100 steps,   0.00000000 sec
+         10 steps,   0.00000000 sec
+          1 steps,   0.00000000 sec
+times() tests done, total steps = 3333333333 
+
