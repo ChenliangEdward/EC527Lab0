@@ -53,5 +53,5 @@ Modified `CLK_RATE` from 2.0e9 to 3.0e9
 ### 2d 2e 2f. Please see code.
 
 ## Part3
-![alt text](master/blob/main/plots/matlabplot.png)
+![alt text](https://github.com/ChenliangEdward/EC527Lab0/blob/main/plots/matlabplot.png)
 
