@@ -45,12 +45,13 @@ it can be useful for benchmarking if it is used to average multiple attempts tha
 ### 2c. **Each timer requires some calibration which may or may not have been done correctly in the source file.**
 
 1. **For each timer, what (potentially) needs to be done?**
-
 The `rdtsc()`'s constant needs to be changed, since its conversion (1.69s) is far different from other result (1.0s).
-
 2. **As necessary, adjust the constants to give correct timing. (Note that all are trying to print values in units of seconds.)**
-
 3. **Describe how you did this and the modification (if any) you made to test_timers.c**
-
 Modified `CLK_RATE` from 2.0e9 to 3.0e9
+
+### 2d 2e 2f. Please see code.
+
+## Part3
+![alt text](https://github.com/ChenliangEdward/EC527Lab0/blob/main/plots/matlabplot.png)
 
