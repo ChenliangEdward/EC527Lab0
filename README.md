@@ -83,6 +83,9 @@ A good way to avoid it is to make sure the CPU is running at a constant temperat
 
 ### 4d.**How many cycles per element does it take on your computer for psum1 and psum2? Is it the same as in B&O’s Figure 5.2? If not, why might it be different?**
 
+![CPE](https://github.com/ChenliangEdward/EC527Lab0/blob/main/plots/CPE.png)
+
+According to this graph, they are 6.20 and 6.12. They are not the same probably because `-O1` optimization already done the job.
 
 ## Part5
 
