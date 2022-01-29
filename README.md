@@ -70,38 +70,45 @@ Matlab plot
 
 ## Part5
 ### 5a. **Compile and run test_O_level.c as follows:**
-Here is what's printed:\
- Starting a loop\
- done\
-real    0 m 0.563s\
-user    0 m 0.560s\
+Here is what's printed:
+ Starting a loop
+ done
+real    0 m 0.563s
+user    0 m 0.560s
 sys     0 m 0.003s
 ### 5b. **Now generate the assembly language code of test_O_level.c with basic optimization:**
-Here is what's printed:\
+Here is what's printed:
  Starting a loop
 
  done
 
-real    0m0.052s\
-user    0m0.048s\
+real    0m0.052s
+user    0m0.048s
 sys     0m0.002s
 ### 5c. **This time compile test_O_level.c as follows to generate the assembly language code:**
 please see test_O_levelO0.s
 ### 5d. **Now generate the assembly language code of test_O_level.c with basic optimization:**
 First, the code is significantly shorter than O0 assembly. Second, it seems that the loop is subtracting 200001 instead of adding like O0 assembly. Also, in the O1 assembly it is not modifying the value of quasi_random. 
 ### 5e. **You should have found something strange. Perhaps using the variable "quasi_random" will solve the problem (how?).**
- Starting a loop\
+ Starting a loop
 -1.559369
 
  done
 
-real    0m0.350s\
-user    0m0.346s\
+real    0m0.350s
+user    0m0.346s
 sys     0m0.003s
 
 The code is taking 0.346s which is significantly larger than what was before but still less than the O0 Optimization.The code is optimized by replacing `jmp .L2` and improve the modification of `%rbp`.
 
+##Part6
 
+### 6a **Read the section in the textbook called "The Roofline Model" (Patterson & Hennesey section 6.10, probably in "PH_6_p2.pdf").**
+Kernel2 has 8 times of arithmetic intensity than Kernel1. But kernel1 has a limited Memory BW. Kernel 2 has a limited computational power. 
+### 6b **Read the stream.c code.**
+### 6c **Compile and run. What is the memory bandwidth?**
+The bandwidth varies from 11521 MB/s to 11673 MB/s, it is significantly smaller than the theoretical bandwidth.  
+### 6d **Adjust the Arithmetic Intensity by modifying all of the lines marked “//Modify”, then recompile and rerun.**
 
 
 
