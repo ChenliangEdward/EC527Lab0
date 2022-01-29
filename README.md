@@ -85,7 +85,7 @@ A good way to avoid it is to make sure the CPU is running at a constant temperat
 
 ![CPE](https://github.com/ChenliangEdward/EC527Lab0/blob/main/plots/CPE.png)
 
-According to this graph, they are 6.20 and 6.12. They are not the same probably because `-O1` optimization already done the job.
+According to this graph, they are 6.20 and 6.12. They are not the same probably because `-O1` optimization eliminates loop unrolling due to the extra space required by this technique.
 
 ## Part5
 
@@ -154,7 +154,11 @@ The bandwidth varies from 11521 MB/s to 11673 MB/s, it is significantly smaller 
 
 ### 6e
 
+![Graph](https://github.com/ChenliangEdward/EC527Lab0/blob/main/plots/AI-GFLOPs.png)
+
 ### 6f
+
+The benchmark is obviously at `AI=2` since the slope decreases dramatically. Achieved GFLOPS/s approximately equals the smaller one of peak memory bandwidth times AI and peak floating-point performance.
 
 ## Part7
 
