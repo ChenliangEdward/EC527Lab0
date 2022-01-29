@@ -109,15 +109,17 @@ Kernel2 has 8 times of arithmetic intensity than Kernel1. But kernel1 has a limi
 ### 6c **Compile and run. What is the memory bandwidth?**
 The bandwidth varies from 11521 MB/s to 11673 MB/s, it is significantly smaller than the theoretical bandwidth.  
 ### 6d **Adjust the Arithmetic Intensity by modifying all of the lines marked “//Modify”, then recompile and rerun.**
+### 6e
+### 6f
 
 ## Part7
 ## 7a **Are you missing skills needed to carry out this assignment?**
 It is hard for me to read and understand assemble.
 ## 7b **How long did this take (hours)?**
 15Hours
-## **Did any part take an “unreasonable” amount of time for what it is trying to accomplish?**
+## 7c **Did any part take an “unreasonable” amount of time for what it is trying to accomplish?**
 Not really.
-## **Are there problems with the lab?**
+## 7d **Are there problems with the lab?**
 Yes, the variable names are not consistent in part6.
 
 
