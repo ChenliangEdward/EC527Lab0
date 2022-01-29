@@ -101,7 +101,7 @@ sys     0m0.003s
 
 The code is taking 0.346s which is significantly larger than what was before but still less than the O0 Optimization.The code is optimized by replacing `jmp .L2` and improve the modification of `%rbp`.
 
-##Part6
+## Part6
 
 ### 6a **Read the section in the textbook called "The Roofline Model" (Patterson & Hennesey section 6.10, probably in "PH_6_p2.pdf").**
 Kernel2 has 8 times of arithmetic intensity than Kernel1. But kernel1 has a limited Memory BW. Kernel 2 has a limited computational power. 
